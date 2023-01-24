@@ -1,0 +1,17 @@
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+  liquibase:
+    enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/canadian_cities
+    username: postgres
+    password: Q12we34r56t
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+server:
+  port: 8080
